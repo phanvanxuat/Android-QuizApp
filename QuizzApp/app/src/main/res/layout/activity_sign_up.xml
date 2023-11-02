@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#252C4A"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:padding="16dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="140dp"
+            android:gravity="center"
+            android:id="@+id/logo"
+            android:layout_gravity="center"
+            android:layout_height="80dp"
+            android:background="@drawable/quizbox"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/signinbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.2"
+                android:background="@drawable/btncolorwhite"
+                android:gravity="center"
+
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-145dp"
+                android:layout_marginLeft="-145dp"
+
+                android:gravity="center"
+                android:padding="10dp"
+
+                android:text="Đăng nhập"
+                android:textColor="@color/white"
+                android:textSize="23dp" />
+
+            <TextView
+                android:id="@+id/signupbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:background="@drawable/btncolorwhite"
+                android:gravity="center"
+                android:text="Đăng ký"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="Bắt đầu với trò chơi"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center_horizontal"
+            android:padding="1dp"
+            android:text="Điền đầy đủ thông tin"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Tên đăng nhập"
+
+                android:textColor="#A8ABB6"
+                android:textSize="14dp"
+
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:hint="xuat"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="#D7939090" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Email của bạn"
+
+                android:textColor="#A8ABB6"
+                android:textSize="14dp"
+
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:hint="gmail@gmail.com"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="#D7939090" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Mật khẩu"
+
+                android:textColor="#A8ABB6"
+                android:textSize="14dp"
+
+                android:textStyle="normal" />
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="*************"
+                android:inputType="textPassword"
+
+                android:textColorHint="#D7939090"
+                android:paddingLeft="10dp"
+                android:id="@+id/password"
+                android:paddingRight="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/edittext"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="5dp"
+                android:text="Nhập lại mật khẩu"
+
+                android:textColor="#A8ABB6"
+                android:textSize="14dp"
+
+                android:textStyle="normal" />
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="*************"
+                android:inputType="textPassword"
+                android:textColorHint="#D7939090"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:id="@+id/confirm_password"
+                android:textColor="@color/white"
+                android:background="@drawable/edittext"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/proceed"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/buttonbackground"
+                android:gravity="center"
+
+                android:text="Bắt đầu"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+
+                />
+
+        </LinearLayout>
+</ScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>
